@@ -29,6 +29,11 @@ else {	echo $logform;
 if (isset($_REQUEST['out'])){
     unset($_SESSION['username']);
 }
-var_dump($_SESSION['username']);
+var_dump($_REQUEST);
 
-
+if (isset($_REQUEST['rname'])){
+    $nusers = array($_REQUEST['rname']=> $_REQUEST['rpassword']);
+    $users= array_merge($nusers,$users);
+}
+var_dump($nusers);
+var_dump($users);
