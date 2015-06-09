@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if ($_SESSION['username']=="grisha") {
 	echo "Hello ".$_SESSION['username'];
     echo "<form action='form.php' method='post'>
@@ -8,6 +9,7 @@ if ($_SESSION['username']=="grisha") {
     ";
 }
 else {
-	echo "LOL :)";
+    echo "You not Log In";
+    include 'form.php';
 }
 
