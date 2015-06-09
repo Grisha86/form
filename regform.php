@@ -10,7 +10,7 @@ echo "
 			Input Your name : <input  type='text' name= 'rname'  value='$rname'><p>
 			Input Your secondname : <input type='text' name='rsecondname' value='$rsecondname' ><p>
 			Input Your email : <input type='email' name='rmail' value='$rmail'><p>
-			Input Your sex  man: <input type='radio' name='rmsex' > woman : <input type='radio' name='rwsex' ><p>
+			Input Your sex  man: <input type='radio' name='rsex' > woman : <input type='radio' name='rsex' ><p>
 			Input Password : <input  type='password' name ='rpassword'><p>
 
 			<input  type='submit' value='Registration'>
