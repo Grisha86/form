@@ -1,14 +1,16 @@
 <?php
 session_start();
+include 'users.php';
+
 if ($_SESSION['username']=="anton") {
-	echo "Hello ".$_SESSION['username'];
+    $logeduser = $users[$_SESSION['username']];
+    echo "Hello ".$logeduser['name'];
     echo "<form action='form.php' method='post'>
             <input type='submit' value='Log out' name='out'>
           </form>
     ";
 }
 else {
-	echo "LOL :)";
+    echo "You not Log In";
+    include 'form.php';
 }
-
-var_dump($_POST);

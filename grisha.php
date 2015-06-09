@@ -1,8 +1,10 @@
 <?php
 session_start();
+include 'users.php';
 
 if ($_SESSION['username']=="grisha") {
-	echo "Hello ".$_SESSION['username'];
+    $logeduser = $users[$_SESSION['username']];
+    echo "Hello ".$logeduser['name'];
     echo "<form action='form.php' method='post'>
             <input type='submit' value='Log out' name='out'>
           </form>
